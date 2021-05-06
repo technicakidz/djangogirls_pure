@@ -6,14 +6,14 @@ https://tutorial.djangogirls.org/ja/
 ## Usage
 ### 仮想環境
 
-作成
+作成(`djangogirls_pure/`)
 ```
-$ python -m venv .venv
+$ python3 -m venv .venv
 ```
 
-起動
+起動(`djangogirls_pure/`)
 ```
-$ source /.venv/bin/activate
+$ source .venv/bin/activate
 ```
 
 終了
