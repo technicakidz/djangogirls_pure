@@ -6,18 +6,27 @@ https://tutorial.djangogirls.org/ja/
 ## Usage
 ### 仮想環境
 
-作成(`djangogirls_pure/`)
+作成
 ```
-$ python3 -m venv .venv
+djangogirls_pure$ python3 -m venv .venv
 ```
 
-起動(`djangogirls_pure/`)
+起動
 ```
-$ source .venv/bin/activate
+djangogirls_pure$ source .venv/bin/activate
 ```
 
 終了
 ```
-(.venv)$ deactivate
+(.venv)djangogirls_pure$ deactivate
 ```
 
+### サーバの起動
+DBのマイグレーション
+```
+djangogirls_pure$ python3 manage.py migrate
+```
+
+```
+~/djangogirls_pure$ python manage.py runserver
+```
