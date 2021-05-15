@@ -10,7 +10,7 @@ from django.utils import timezone
 # オブジェクト
 class Post(models.Model): # 引数の内容はDjangoにDBに保存するものを教える
     # プロパティ群
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) # ForeignKey は
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) # ForeignKey は1対多のモデルをリンクさせる，設定は子モデル側に
     title = models.CharField(max_length=200) # CharField は他に無効な文字列設定もできる
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
