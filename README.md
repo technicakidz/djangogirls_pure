@@ -30,3 +30,9 @@ djangogirls_pure$ python3 manage.py migrate
 ```
 ~/djangogirls_pure$ python manage.py runserver
 ```
+
+### クラウドサーバ設定
+pythonanywhereでのヘルパーを利用した設定
+```
+pa_autoconfigure_django.py https://github.com/technicakidz/djangogirls_pure.git --nuke --branch=master
+```
