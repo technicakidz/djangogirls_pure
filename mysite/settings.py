@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig', # startapp で生成したアプリの追加
+    'technicakidz.pythonanywhere.com',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/home/technicakidz/technicakidz.pythonanywhere.com/static'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 静的ファイルのパスを追加し BASE_DIR に static を結合
