@@ -24,7 +24,7 @@ djangogirls_pure$ source .venv/bin/activate
 ### サーバの起動
 ヘルパーを利用した初期設定
 ```
-$ pa_autoconfigure_django.py --python=3.6 https://github.com/technicakidz/djangogirls_pure.git --nuke --branch=master
+$ pa_autoconfigure_django.py --python=3.6 https://github.com/technicakidz/djangogirls_pure.git --nuke --branch=develop-pythonanywhere
 ```
 
 DBのマイグレーション
