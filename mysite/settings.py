@@ -28,7 +28,7 @@ except ImportError:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com'] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['*'] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
