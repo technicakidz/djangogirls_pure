@@ -31,7 +31,7 @@ SECRET_KEY = '6w(qmbp4v3ufc$a81q9*$f+o+u!^%y9=r%ai%ldijlx*#d#e8d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*'] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = [] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig', # startapp で生成したアプリの追加
+    'mysite',
 ]
 
 MIDDLEWARE = [
