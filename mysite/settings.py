@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import dj_database_url
-import django_heroku
+# import django_heroku
+# かわりに使う pip install whitenoise gunicorn
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,9 +30,9 @@ SECRET_KEY = '6w(qmbp4v3ufc$a81q9*$f+o+u!^%y9=r%ai%ldijlx*#d#e8d'
 #     pass
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['https://afternoon-chamber-24924.herokuapp.com/', '127.0.0.1'] # 空リストのときは ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -133,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # 静的ファイルのパスを追加し BASE_DIR に static を結合
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 静的ファイルのパスを追加し BASE_DIR に static を結合
 
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
@@ -141,4 +142,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # 静的ファイルのパ�
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
